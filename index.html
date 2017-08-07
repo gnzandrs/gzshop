@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -21,7 +22,10 @@
             <h1>GZshop</h1>
           </div>
           <div class="col-xs-3 text-xs-right text-md-center">
-            <a href="#">Login</a>
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navMenu">
+              &#9776;
+            </button>
+            <a class="login hidden-xs-down text-uppercase font-weight-bold" href="#">Login</a>
           </div>
         </div>
       </div>
@@ -29,37 +33,61 @@
     <!-- /Header -->
 
     <!-- Menu -->
-    <nav id="menu-container" class="navbar navbar-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-10 offset-xs-2 col-md-4 offset-md-0">
-            <ul class="nav navbar-nav">
-              <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Carrito</a>
-              </li>
-            </ul>
+    <div id="menu-container">
+      <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 offset-xs-1 col-md-4 offset-md-0">
+              <ul class="nav navbar-nav">
+                <li class="nav-item text-xs-center active">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item text-xs-center">
+                  <a href="#" class="nav-link">Catalogo</a>
+                </li>
+                <li class="nav-item text-xs-center">
+                  <a href="#" class="nav-link">Carrito</a>
+                </li>
+                <li class="nav-item text-xs-center hidden-sm-up">
+                  <a href="#" class="nav-link">Login</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 offset-md-2 hidden-xs-down">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontro lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="col-xs-12 col-md-6 offset-md-2">
-            <form>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="¿Encontro lo que buscaba?">
-                <span class="input-group-btn">
-                  <button class="btn btn-platzi" type="button">
-                    Buscar
-                  </button>
-                </span>
-              </div>
-            </form>
+        </div>
+      </nav>
+
+      <div id="search-bar" class="container hidden-sm-up">
+        <div class="row">
+          <div class="col-xs">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontro lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
     <!-- /Menu -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
