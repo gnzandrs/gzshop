@@ -34,3 +34,6 @@ input.form-control:focus {
 	padding: 1em;
 }
 
+#productosCarousel img {
+	margin: 0 auto;
+}
