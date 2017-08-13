@@ -99,11 +99,28 @@ input.form-control:focus {
 	margin-top: 1em;
 }
 
+/* dispositivos muy pequeños */
 @media (max-width: 768px) {
-	#productos-container .filtros-toggle {
-		margin-bottom: 1em;
+	.listado-productos {
+		margin-top: 2em;
+	}
+
+	.listado-productos .card-img-top {
+		width: 100%;
 	}
 }
 
+.pagination-container {
+  margin-bottom: 0 !important;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+  background-color: #99c84a;
+  border-color: #99c84a;
+}
+
+.page-link, .page-link:focus, .page-link:hover {
+  color: #8ab542;
+}
 
 
