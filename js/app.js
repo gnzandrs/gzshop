@@ -22,3 +22,20 @@ $form.submit(function (ev) {
 	$formGroup.append(el);
 
 });
+
+function mostrarModal() {
+	if (localStorage.noMostrarModal == undefined)
+	{
+		localStorage.noMostrarModal = false;
+	}
+
+	const noMostrarModal = JSON.parse(localStorage.noMostrarModal);
+
+	if (!noMostrarModal) {
+		$('#modalOferta').modal();
+	}
+	
+	$('#btnNoRegistrar').on('click', function (e) {
+		localStorage.noMostrarModal = true;
+	});
+}
